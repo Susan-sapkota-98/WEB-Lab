@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 200px;
+}
+
+/* Common box style */
+.box {
+    width: 200px;
+    height: 80px;
+    margin: 20px;
+    padding: 10px;
+    background-color: lightblue;
+    border: 2px solid black;
+}
+
+/* Static */
+.static-box {
+    position: static;
+}
+
+/* Relative */
+.relative-box {
+    position: relative;
+    background-color: lightgreen;
+}
+
+/* Absolute */
+.absolute-box {
+    position: absolute;
+    background-color: bisque;
+    top: 120px;
+    left: 10px;
+    padding: 5px;
+}
+
+/* Fixed */
+.fixed-box {
+    position: fixed;
+    top: 10px;
+    right:10px;
+    
+    background-color: yellow;
+    padding: 10px;
+}
+
+/* Sticky */
+.sticky-box {
+    position: sticky;
+    top: 0;
+    background-color: orange;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+/* Display properties */
+.block {
+    display: block;
+    background-color: pink;
+    margin: 10px;
+}
+
+.inline {
+    display: inline;
+    background-color: lightgray;
+    padding: 5px;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    background-color: lightseagreen;
+    margin: 5px;
+}
+
+.none {
+    display: none;
+}
+
+/* Z-index */
+.z-container {
+    position: relative;
+    height: 150px;
+}
+
+.z-box {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.one {
+    background-color: red;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.two {
+    background-color: blue;
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+}
+
+/* Overflow */
+.overflow-hidden,
+.overflow-scroll,
+.overflow-auto {
+    width: 200px;
+    height: 60px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
+.overflow-auto {
+    overflow: auto;
+}

@@ -1,0 +1,70 @@
+<!-- Create a student registration form using HTML only that collects
+user information such as full name, email, password, age, gender,
+course and acceptance of terms and conditions. Use appropriate
+form elements including text fields, radio buttons, dropdown lists
+and checkboxes. Apply basic HTML validation using attributes
+such as required, min, max and pattern. As a challenge, prevent
+the form from being submitted if the user’s age is less than 16 and
+display an alert message saying “Registration Successful” when
+the form is submitted successfully. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>
+        Student Registration Form
+    </h1>
+
+    <form>
+        <label for="Username" name="Username">Username:</label><br>
+
+        <input type="text" pattern="[A-Za-z/s]" id="Username" placeholder="Enter your name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" placeholder="Enter you valid email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" placeholder="Enter your password"><br>
+
+        <!-- Age -->
+        <label for="age">Age:</label><br>
+        <input type="number" name="age" required min="18" max="120" id="age" placeholder="only 18 above"><br><br>
+
+        <label for="gender">Gender:</label><br>
+
+        <input type="radio" name="gender " value="Male" >
+        <label for="male">Male</label><br>
+
+        <input type="radio" name="gender " value="Female" >
+        <label for="Female">Female</label><br>
+
+        <input type="radio" name="gender " value="Other" >
+        <label for="Other">Other</label><br>
+        <br>
+
+        <label for="Course">Select a Course:</label>
+        <select id="course" required>
+        <option value="">-- Please choose an option --</option>
+        <option value="CS">Computer Science</option>
+        <option value="IT">Information Technology</option>
+        <option value="AI">Artificial Intelligence</option>
+        <option value="web">Web Development</option>
+        </select>
+        <br>
+        <br>
+
+         <input type="checkbox" required>
+            I agree to the terms and conditions
+        <br>
+        <br>
+        <input type="submit" required value="Submit">
+
+
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a1a4b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    background-color: #e3cece;
+    padding: 30px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #dcdde1;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    border-color: #cbe6c6;
+    outline: none;
+    background-color: #f5fff7;
+}
+
+.gender {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.gender label {
+    font-weight: normal;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.terms input {
+    width: auto;
+    margin-right: 10px;
+}
+
+input:required:invalid {
+    border-color: #553f39;
+}
+
+.age-warning {
+    display: none;
+    margin-top: 8px;
+    padding: 10px;
+    background-color: #ffe6e6;
+    color: #c23616;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="number"]:out-of-range+.age-warning {
+    display: block;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    background-color: #273c75;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #40739e;
+    transform: translateY(-2px);
+}
+
+button:focus {
+    outline: 2px solid #7da976;
+}

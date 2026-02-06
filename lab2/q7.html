@@ -1,0 +1,57 @@
+<!-- Design a student registration form using HTML and CSS that collects user information such as username, email, password, age, gender, course and acceptance of terms and conditions. Use CSS to style the form elements including text fields, radio buttons, dropdown lists and checkboxes to make the form visually appealing and user-friendly. Apply layout techniques such as spacing, alignment, borders, background colors and font styling to organize the form in a structured manner. Ensure that form validation messages and required fields are clearly visible and highlight the input fields when focused. As a challenge, use CSS to display a message box or style the alert area that appears if the user’s age is less than 16, and apply hover or focus effects on the submit button to indicate interactivity. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="q7.css">
+  
+</head>
+
+<body>
+
+    <form>
+        <h2>Student Registration</h2>
+
+        <label>Username</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Password</label>
+        <input type="password" required>
+
+        <label>Age</label>
+        <input type="number" min="18" required>
+        <div class="age-warning">Age must be at least 18 years</div>
+
+        <label>Gender</label>
+        <div class="gender">
+            <label><input type="radio" name="gender" required> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> Other</label>
+        </div>
+
+        <label>Course</label>
+        <select required>
+            <option value="">Select a course</option>
+            <option>BCT</option>
+            <option>BCE</option>
+            <option>BEI</option>
+            <option>BAR</option>
+        </select>
+
+        <div class="terms">
+            <input type="checkbox" required>
+            <span>I accept the terms and conditions</span>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+
+</html>
