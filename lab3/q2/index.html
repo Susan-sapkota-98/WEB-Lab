@@ -1,0 +1,86 @@
+<!-- Create a registration form with the following fields: username, email, role (dropdown: Student or Teacher), password, confirm password,  full name, email, password, age, gender, course and acceptance of terms and conditions. Validate the form according to these rules:
+a. Email must match the role:
+If Student → email must end with @student.edu.np
+If Teacher → email must end with @tutor.edu.np
+b. Confirm Password must match Password.
+Highlight invalid inputs with a red border and show error messages. Prevent form submission if any validation fails.
+
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<div class="form-box">
+
+  <label>Username:</label><br>
+  <input type="text" id="uname"><br>
+  <span class="err" id="err1">please enter username</span>
+
+  <label>Full Name:</label><br>
+  <input type="text" id="fname"><br>
+  <span class="err" id="err2">please enter full name</span>
+
+  <label>Email:</label><br>
+  <input type="text" id="email"><br>
+  <span class="err" id="err3">email not valid</span>
+
+  <label>Role:</label><br>
+  <select id="role">
+    <option value="">--select--</option>
+    <option value="student">Student</option>
+    <option value="teacher">Teacher</option>
+  </select><br>
+  <span class="err" id="err4">please select role</span>
+
+  <label>Age:</label><br>
+  <input type="number" id="age"><br>
+  <span class="err" id="err5">please enter age</span>
+
+  <label>Gender:</label><br>
+  <select id="gender">
+    <option value="">--select--</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select><br>
+  <span class="err" id="err6">please select gender</span>
+
+  <label>Course:</label><br>
+  <select id="course">
+    <option value="">--select--</option>
+    <option value="cs">Computer Science</option>
+    <option value="math">Mathematics</option>
+    <option value="science">Science</option>
+    <option value="english">English</option>
+  </select><br>
+  <span class="err" id="err7">please select course</span>
+
+  <label>Password:</label><br>
+  <input type="password" id="pass"><br>
+  <span class="err" id="err8">password must be 8 characters</span>
+
+  <label>Confirm Password:</label><br>
+  <input type="password" id="cpass"><br>
+  <span class="err" id="err9">password not matching</span>
+
+  <br>
+  <input type="checkbox" id="terms">
+  <label>i agree to terms and conditions</label><br>
+  <span class="err" id="err10">please accept terms</span>
+
+  <br>
+  <button onclick="validate()">Submit</button>
+  <p id="successmsg" style="color:green; display:none;">form submitted successfully!</p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

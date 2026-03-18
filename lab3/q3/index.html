@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h3>3. Build a Dynamic Table that adds and deletes rows.</h3>
+
+<h2>Dynamic Table</h2>
+
+<input type="text" id="nameInput" placeholder="Name">
+<input type="text" id="ageInput" placeholder="Age">
+<button onclick="addRow()">Add Row</button>
+
+<br><br>
+
+<table id="myTable">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Actions</th>
+  </tr>
+  <tr>
+    <td>Ram</td>
+    <td>31</td>
+    <td><button onclick="deleteRow(this)">Delete</button></td>
+  </tr>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
